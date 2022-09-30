@@ -54,22 +54,8 @@
 	}
 
 
-
-	if (file_exists($_POST['cv'])){ // Verification  du CV
-		echo "Le fichier n'est pas présent" . "<br>";
-	}
-
-	else {
-		echo "Le fichier est présent" . "<br>";
-	}
-
-	if (empty($_POST['classe'])) { // Champs de la Classe
-	echo "Erreur de classe" . "<br>";
-	}
-	else {
-	echo "Classe conforme" . "<br>";}
-
-
+J'ai supprim� deux blocs .
+S
 	$df= fopen('/home/a-derchain/Bureau/liste.pdf','w');  //Met les informations dans un pdf
 	fwrite($df,$_POST['lname'].", ".$_POST['fname'].", ".$_POST['age'].", "
 		.$_POST['rue'].", ".$_POST['cp'].", ".$_POST['ville'].", ".$_POST['mail'].", ".$_POST['num-tel']);
